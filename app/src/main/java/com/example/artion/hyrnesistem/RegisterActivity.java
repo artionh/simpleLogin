@@ -46,6 +46,25 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
+    public void checkPassword(){
+        init();
+        register.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                inPassword = password.getText().toString();
+                inRetype = retype.getText().toString();
+                if (inPassword.equals(inRetype)) {
+                    Toast.makeText(getApplicationContext(),"Fjalekalimet jane njesoj",Toast.LENGTH_SHORT);
+                    return true;
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Fjalekalimet nuk jane njesoj",Toast.LENGTH_SHORT);
+                    return false;
+                }
+            }
+        });
+    }
+
     public void checkRegister(){
         inFullName = fullName.getText().toString();
         inEmail = email.getText().toString();
