@@ -60,6 +60,18 @@
                 android:layout_height="20dp" />
 
             <EditText
+                android:id="@+id/rRetypePassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="16sp"
+                android:hint="@string/retype"
+                android:inputType="textPassword" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
                 android:id="@+id/rMobile"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
