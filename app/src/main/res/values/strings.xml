@@ -10,5 +10,8 @@
     <string name="hyr">Hyr ne sistem</string>
     <string name="app_name2">Profili</string>
     <string name="retype">Rishkruaj fjalekalimin</string>
-    <string name="text">HI!</string>
+    <string name="profileEmailValue">HI!</string>
+    <string name="profilePasswordValue">Hi!</string>
+    <string name="profileEmailLabel">E-mail:</string>
+    <string name="profilePasswordLabel">Password:</string>
 </resources>

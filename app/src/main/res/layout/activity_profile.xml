@@ -14,10 +14,70 @@
         tools:layout_editor_absoluteX="8dp"
         tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/text" />
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profileEmailLb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:text="@string/profileEmailLabel" />
+
+                <TextView
+                    android:id="@+id/profileEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/profileEmailValue"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profilePasswordLb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:text="@string/profilePasswordLabel" />
+
+                <TextView
+                    android:id="@+id/profilePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/profilePasswordValue"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
