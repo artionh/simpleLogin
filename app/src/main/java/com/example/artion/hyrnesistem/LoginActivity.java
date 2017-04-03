@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
     public void checkLogin(){
         inEmail = email.getText().toString();
         inPassword = password.getText().toString();
-        String message = "";
+        String message;
         if(inEmail.isEmpty() && inPassword.isEmpty()){
             message = "Fushat nuk mund te jene bosh!";
             Toast.makeText(getApplicationContext(),message,Toast.LENGTH_SHORT).show();
