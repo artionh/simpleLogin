@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.artion.task1.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+
+            <EditText
+                android:id="@+id/rFullName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="16sp"
+                android:hint="@string/rEmri"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/rEmail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="16sp"
+                android:hint="@string/rEmail"
+                android:inputType="textEmailAddress" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/rPassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="16sp"
+                android:hint="@string/rFjalekalimi"
+                android:inputType="textPassword" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/rMobile"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="16sp"
+                android:hint="@string/rMobile"
+                android:inputType="phone" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/rRegister"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/red"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="@string/registrohu" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
