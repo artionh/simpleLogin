@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.artion.hyrnesistem.LoginActivity">
     <RelativeLayout
-        android:layout_width="344dp"
-        android:layout_height="495dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp">
