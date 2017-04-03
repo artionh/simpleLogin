@@ -21,7 +21,6 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        init();
         login();
         register();
     }
@@ -62,6 +61,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login(){
+        init();
         login.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 checkLogin();
