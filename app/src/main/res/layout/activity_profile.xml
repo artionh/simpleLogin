@@ -8,8 +8,8 @@
 
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="344dp"
+        android:layout_height="495dp"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp"
         tools:ignore="MissingConstraints">
@@ -33,6 +33,7 @@
                     android:layout_weight="2"
                     android:textColor="@color/colorPrimaryDark"
                     android:gravity="center_vertical"
+                    android:textAlignment="textEnd"
                     android:textSize="18sp"
                     android:text="@string/profileEmailLabel" />
 
@@ -62,6 +63,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
+                    android:textAlignment="textEnd"
                     android:layout_weight="2"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp"

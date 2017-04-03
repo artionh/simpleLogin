@@ -25,8 +25,8 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        register();
         checkPassword();
+        register();
     }
 
     public void init(){
@@ -55,13 +55,17 @@ public class RegisterActivity extends AppCompatActivity {
             public boolean onLongClick(View v) {
                 inPassword = password.getText().toString();
                 inRetype = retype.getText().toString();
-                if (inPassword.equals(inRetype)) {
-                    Toast.makeText(getApplicationContext(),"Fjalekalimet jane njesoj",Toast.LENGTH_SHORT).show();
+                if(inPassword.isEmpty() || inRetype.isEmpty()){
+                    Toast.makeText(getApplicationContext(),"Fjalekalimet jane bosh",Toast.LENGTH_SHORT).show();
                     return true;
+                }
+                else if(inPassword.equals(inRetype)) {
+                    Toast.makeText(getApplicationContext(),"Fjalekalimet jane njesoj",Toast.LENGTH_SHORT).show();
+                    return false;
                 }
                 else{
                     Toast.makeText(getApplicationContext(),"Fjalekalimet nuk jane njesoj",Toast.LENGTH_SHORT).show();
-                    return false;
+                    return true;
                 }
             }
         });
