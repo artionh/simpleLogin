@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Hyr Ne Sistem</string>
+    <string name="app_name">HYR NE SISTEM</string>
+    <string name="app_name1">REGJISTROHU</string>
+    <string name="registrohu">regjistrohu</string>
+    <string name="rEmri">Emri i plote</string>
+    <string name="rEmail">E-mail</string>
+    <string name="rFjalekalimi">Fjalekalimi</string>
+    <string name="rMobile">Telefon +355/</string>
+    <string name="forget">Keni harruar fjalekalimin?</string>
+    <string name="hyr">Hyr ne sistem</string>
 </resources>
