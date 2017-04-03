@@ -26,6 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         register();
+        checkPassword();
     }
 
     public void init(){
@@ -40,6 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
     public void register(){
         init();
         register.setOnClickListener(new View.OnClickListener(){
+            @Override
             public void onClick(View v){
                 checkRegister();
             }
