@@ -6,4 +6,18 @@
     android:layout_height="match_parent"
     tools:context="com.example.artion.hyrnesistem.ProfileActivity">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/text" />
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
