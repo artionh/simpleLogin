@@ -54,11 +54,11 @@ public class RegisterActivity extends AppCompatActivity {
                 inPassword = password.getText().toString();
                 inRetype = retype.getText().toString();
                 if (inPassword.equals(inRetype)) {
-                    Toast.makeText(getApplicationContext(),"Fjalekalimet jane njesoj",Toast.LENGTH_SHORT);
+                    Toast.makeText(getApplicationContext(),"Fjalekalimet jane njesoj",Toast.LENGTH_SHORT).show();
                     return true;
                 }
                 else{
-                    Toast.makeText(getApplicationContext(),"Fjalekalimet nuk jane njesoj",Toast.LENGTH_SHORT);
+                    Toast.makeText(getApplicationContext(),"Fjalekalimet nuk jane njesoj",Toast.LENGTH_SHORT).show();
                     return false;
                 }
             }
